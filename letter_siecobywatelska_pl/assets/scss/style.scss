@@ -1,0 +1,48 @@
+$brand-primary: #D72626;
+$body-bg: #EEE;
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'select2/core';
+@import 'select2/theme/default/layout';
+
+.paper{
+	@include clearfix;
+	min-height: 500px;
+	background: white;
+	border-radius: 15px;
+	border: 1px solid #EEE;
+	padding: 15px;
+	margin: 20px 0 ;
+}
+
+[contenteditable="true"]:before{
+  display: inline-block;
+}
+#form_send_letter{
+	@include center-block;
+	max-width: 500px;
+}
+#form_to{
+	width: 100%;
+}
+#field_from, #field_title, #field_contnet{
+	margin-bottom: 15px;
+}
+#field_title{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#field_sign{
+	float: right;
+	min-width: 200px;
+}
+.js-placeholder{
+	background: lighten(#FFD142, 20%);
+}
+.input-area{
+	padding: 10px;
+}
+[contenteditable]:focus{
+	outline: 1px dashed #D72626;
+}
